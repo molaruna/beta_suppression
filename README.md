@@ -8,7 +8,8 @@ This code uses Matlab 2019b.
 
 ## Data
 
-Data collected from the Mocha dataset is available on UCSF Box. You will first need to request access from me. Upload the dataset into the **data** directory to implement this code.
+Data collected from the Mocha dataset is available on UCSF Box: [link](https://ucsf.box.com/s/r1u0i2cwdm90f20htki1wnktid0wx2t0).   
+You will first need to request access from me. Upload the dataset into the **data** directory to implement this code.
 
 ## Analysis + figures
 
