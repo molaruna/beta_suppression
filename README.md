@@ -21,3 +21,6 @@ All raw data are cleaned and figures are generated using ```EC118_main.m``` and 
   * Modify the configuration parameters in ```fun_cfg.m```
   * Code your own functions in place of ```fun_trialTimings.m```, ```fun_preprocessing.m```, or ```fun_plotNNMFclusters.m```
 * There is a bug in plot 5, this is will be resolved shortly. 
+
+## License
+This software is open source and under an MIT license.
