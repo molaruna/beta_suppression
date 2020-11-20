@@ -1,6 +1,4 @@
-% Show analytic signal for multiple trials of one subject
-%
-% Create vars for each block
+% Classify analytic signal for single subject
 % Author: maria.olaru@ucsf.edu
 
 % Get repo parent directory path
