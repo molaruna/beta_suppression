@@ -2,15 +2,6 @@
 %
 % Create vars for each block
 % Author: maria.olaru@ucsf.edu
-%
-% Requirements: 
-% 1. filename must be unique in file path and start with subject ID "EC118"
-% 2. directory structure: |beta_suppression
-%                         |  source
-%                         |    init.m
-%                         |    EC118_main.m
-%                         |  data 
-%                         |    trial.times.txt
 
 % Get repo parent directory path
 fp = matlab.desktop.editor.getActiveFilename;
