@@ -13,7 +13,7 @@ You will first need to request access from me. Upload the dataset into the **dat
 
 ## Analysis + figures
 
-All raw data are cleaned and figures are generated using ```EC118_main.m```. You can comment and uncomment the figures you want to run.
+All raw data are cleaned and figures are generated using ```EC118_main.m``` and output in the **plots** directory. You can comment and uncomment the figures you want to run.
 
 ## Notes
 
