@@ -1,0 +1,6 @@
+#exclude
+data/*
+EC118_main.m~
+
+#exception to exclusion criteria
+!data/.gitkeep

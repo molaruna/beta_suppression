@@ -1,0 +1,54 @@
+% Plot normalized channels
+% Author: maria.olaru@ucsf.edu
+
+function [] = fun_plotNNMFpial(cfg)
+
+  %load subject data
+  cfg.paths.pial = cfg.paths.study + 'data/EC118_pial/';
+  load(cfg.paths.pial + 'EC118_lh_pial.mat');
+  load(cfg.paths.pial + 'TDT_elecs_all.mat');
+
+  %create color scale: 
+  c_color = zeros(100, 3);
+
+  %For blue-light blue ramp
+  c_color(1:25, 1) = linspace(0, 0.06, 25);    %R: Create slight red ramp
+  c_color(1:25, 2) = linspace(0, 1, 25);       %G: Create green ramp
+  c_color(1:25, 3) = 1;                        %B: Maintain full blue
+
+  %For light-blue grey ramp
+  c_color(26:50, 1) = linspace(0.06, 0.8, 25); %R: increase red ramp
+  c_color(26:50, 2) = linspace(1, 0.8, 25);    %G: decrease green ramp
+  c_color(26:50, 3) = linspace(1, 0.8, 25);    %B: decrease blue ramp
+
+  %For grey-yellow ramp
+  c_color(51:75, 1) = linspace(0.8, 1, 25); %R: Create grey to yellow ramp
+  c_color(51:75, 2) = linspace(0.8, 1, 25); %G: Create grey to yellow ramp
+  c_color(51:75, 3) = linspace(0.8, 0, 25); %B: Remove grey ramp 
+
+  %For yellow-red ramp
+  c_color(76:100, 1) = 1;                   %R: Maintain full red
+  c_color(76:100, 2) = linspace(1, 0, 25);  %G: Remove yellow ramp
+  c_color(76:100, 3) = 0;                   %B: Maintain zero blue
+
+  for cl_num = 1:length(ch_cl)
+      ch_list = ch_cl{cl_num};
+    
+      %plot pial surface
+      ctmr_gauss_plot(cortex, [0,0,0], 0, 'lh');
+   
+      scatter3(elecmatrix(1:256,1), elecmatrix(1:256,2), ...
+          elecmatrix(1:256,3), 25, W(1:256, 1), 'filled');
+    
+      colormap(c_color);
+      colorbar;
+      max_val = max(W(:, cl_num));
+      caxis([-1 * max_val max_val])
+
+      title(sprintf('NMF %d clusters | Cluster %d > %g', n, cl_num, ...
+                    prcntThresh), 'fontsize', 20);
+      fileName = sprintf("NMFpialSurface%dclst.clst%d.png", n, cl_num);
+      print(fileName, '-dpng');
+      close all
+end
+end
