@@ -1,12 +1,15 @@
 #exclude
 data/*
 plots/plot1/*
-plots/plot2/*
-plots/plot4/*
 plots/plot2.png
 plots/plot3.png
+plots/plot4/*
+plots/plot5/*
 EC118_main.m~
 
 #exception to exclusion criteria
 !data/.gitkeep
 !plots/.gitkeep
+!plots/plot1/.gitkeep
+!plots/plot4/.gitkeep
+!plots/plot5/.gitkeep
