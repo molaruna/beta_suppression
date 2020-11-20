@@ -1,6 +1,10 @@
 #exclude
 data/*
-plots/*
+plots/plot1/*
+plots/plot2/*
+plots/plot4/*
+plots/plot2.png
+plots/plot3.png
 EC118_main.m~
 
 #exception to exclusion criteria
