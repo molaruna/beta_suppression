@@ -1,6 +1,6 @@
 # beta_suppression
 
-This code uses FieldTrip and non-negative matrix factorization (NMF) to classify iEEG beta-band suppression pre-speech onset from the Mocha dataset collected in the Chang Lab at UCSF. The abstract associated with the work is available [here](https://drive.google.com/file/d/1g8srSLMTZcVEutMiJRKC0VzDy5CpXvXI/view?usp=sharing), with the accompanying figure available [here](https://drive.google.com/file/d/1OZy1C1xQRhmwyYRs56poyB-GGA7vZcAM/view?usp=sharing) upon request.
+This code uses FieldTrip and non-negative matrix factorization (NMF) to classify iEEG beta-band suppression pre-speech onset from the Mocha dataset collected in the Chang Lab at UCSF. The abstract associated with the work is available [here](https://drive.google.com/file/d/1g8srSLMTZcVEutMiJRKC0VzDy5CpXvXI/view?usp=sharing), with the accompanying figure available [here](https://drive.google.com/file/d/1OZy1C1xQRhmwyYRs56poyB-GGA7vZcAM/view?usp=sharing), upon request.
 
 ## Getting Started
 
