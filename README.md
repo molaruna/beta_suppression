@@ -4,7 +4,7 @@ This code uses FieldTrip and non-negative matrix factorization (NMF) to classify
 
 ## Getting Started
 
-This code uses Matlab 2019b and the Bioinformatics Toolbox version 4.13
+This code uses Matlab 2019b and the Bioinformatics Toolbox version 4.13.
 
 ## Data
 
